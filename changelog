@@ -1,0 +1,19 @@
+libboost (1.70-0) unstable; urgency=medium
+
+  * Update to boost 1.70.0
+
+ -- Martin Hierholzer <martin.hierholzer@desy.de>  Mon, 3 Jun 2019 14:26:00 +0100
+
+
+libboost (1.68-0) unstable; urgency=medium
+
+  * Update to boost 1.68.0
+
+ -- Martin Hierholzer <martin.hierholzer@desy.de>  Sun, 2 Dez 2018 14:05:55 +0100
+
+
+libboost (1.67-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Martin Hierholzer <martin.hierholzer@desy.de>  Mon, 16 Apr 2018 18:04:10 +0200

@@ -1,0 +1,22 @@
+Source: libboost
+Priority: optional
+Maintainer: Martin Hierholzer <martin.hierholzer@desy.de>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Section: libs
+Homepage: http://boost.org
+Vcs-Git: git@github.com:boostorg/boost.git
+Vcs-Browser: https://github.com/boostorg/boost
+
+Package: libboost1.70-dev
+Section: libdevel
+Architecture: any
+Depends: libboost1.70 (= ${binary:Version}), ${misc:Depends}
+Description: Boost C++ Libraries development files
+Conflicts: libboost-dev
+Provides: libboost-dev
+
+Package: libboost1.70
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Boost C++ Libraries
