@@ -3,7 +3,15 @@ Priority: optional
 Maintainer: Michael Bentley <mikebentley15@gmail.com>
 Build-Depends:
   debhelper (>=9),
-  icu-devtools
+  icu-devtools,
+  libhwloc-dev,
+  libibverbs-dev,
+  libicu-dev,
+  libltdl-dev,
+  libnuma-dev,
+  libpython3.5-dev,
+  libtool,
+  mpi-default-dev
 Standards-Version: 3.9.6
 Section: libs
 Homepage: http://boost.org
