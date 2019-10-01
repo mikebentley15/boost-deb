@@ -1,7 +1,9 @@
 Source: libboost
 Priority: optional
-Maintainer: Martin Hierholzer <martin.hierholzer@desy.de>
-Build-Depends: debhelper (>=9)
+Maintainer: Michael Bentley <mikebentley15@gmail.com>
+Build-Depends:
+  debhelper (>=9),
+  icu-devtools
 Standards-Version: 3.9.6
 Section: libs
 Homepage: http://boost.org
@@ -11,8 +13,20 @@ Vcs-Browser: https://github.com/boostorg/boost
 Package: libboost1.70-dev
 Section: libdevel
 Architecture: any
-Depends: libboost1.70 (= ${binary:Version}), ${misc:Depends}
+Depends:
+  ${misc:Depends},
+  libboost1.70 (= ${binary:Version}),
+  icu-devtools,
+  libhwloc-dev,
+  libibverbs-dev,
+  libicu-dev,
+  libltdl-dev,
+  libnuma-dev,
+  libpython3.5-dev,
+  libtool,
+  mpi-default-dev
 Description: Boost C++ Libraries development files
+Provides: libboost-all-dev, libboost-dev
 Conflicts:
   libboost-all-dev,
   libboost-atomic-dev,
@@ -128,8 +142,21 @@ Replaces:
 
 Package: libboost1.70
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+  ${shlibs:Depends},
+  ${misc:Depends},
+  libhwloc-plugins,
+  libhwloc5,
+  libibverbs1,
+  libltdl7,
+  libnuma1,
+  libopenmpi1.10,
+  libpciaccess0,
+  libpython3.5,
+  mpi-default-bin,
+  ocl-icd-libopencl1
 Description: Boost C++ Libraries
+Provides: libboost, libboost-all
 Conflicts:
   libboost-geometry-utils-perl,
   libboost-atomic1.58.0,
